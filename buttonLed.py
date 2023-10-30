@@ -47,9 +47,9 @@ while True:
         prevState = currState
         print("button changed!")
         # send a message
-#		client.connect(broker)
-#		client.publish("pi/nathan/button/1", "single_click")
-#		client.disconnect()
+        client.connect(broker)
+        client.publish("pi/nathan/button/1", "single_click")
+        client.disconnect()
     else:
         # client.publish("pi/nathan/button/1", "single_click")
         pass
